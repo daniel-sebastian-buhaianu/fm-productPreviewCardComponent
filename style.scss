@@ -5,6 +5,7 @@ $aurometal--color: #6C7289;
 $white--color: #FFF;
 $deep--color: #3D8168;
 $deep-hover--color: #1A4032;
+$desktop--breakpoint: 1440px;
 body {
   background-color: $cream--color;
 }
@@ -24,6 +25,7 @@ main {
       font-weight: 500;
       letter-spacing: 5px;
       color: $aurometal--color;
+      text-transform: uppercase;
     }
     .title {
       font-family: $secondary--font-family, serif;
@@ -86,5 +88,41 @@ main {
   border-radius: 10px 10px 0 0;
   &--desktop {
     display: none;
+  }
+}
+@media (min-width: $desktop--breakpoint) {
+  main {
+    width: 600px;
+    margin: 175px auto;
+    flex-direction: row;
+    > div {
+      width: 236px;
+      padding: 32px;
+      border-radius: 0 10px 10px 0;
+      .category {
+        margin-bottom: 20px;
+      }
+      .title {
+        margin-bottom: 24px;
+      }
+      .description {
+        margin-bottom: 29px;
+      }
+      .price {
+        margin-bottom: 30px;
+      }
+      button {
+        width: 236px;
+      }
+    }
+  }
+  .img {
+    &--mobile {
+      display: none;
+    }
+    &--desktop {
+      display: inherit;
+      border-radius: 10px 0 0 10px;
+    }
   }
 }

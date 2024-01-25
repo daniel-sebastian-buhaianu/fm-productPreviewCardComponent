@@ -20,6 +20,7 @@ main > div .category {
   font-weight: 500;
   letter-spacing: 5px;
   color: #6C7289;
+  text-transform: uppercase;
 }
 main > div .title {
   font-family: "Fraunces", serif;
@@ -82,6 +83,41 @@ main > div button:hover {
 }
 .img--desktop {
   display: none;
+}
+
+@media (min-width: 1440px) {
+  main {
+    width: 600px;
+    margin: 175px auto;
+    flex-direction: row;
+  }
+  main > div {
+    width: 236px;
+    padding: 32px;
+    border-radius: 0 10px 10px 0;
+  }
+  main > div .category {
+    margin-bottom: 20px;
+  }
+  main > div .title {
+    margin-bottom: 24px;
+  }
+  main > div .description {
+    margin-bottom: 29px;
+  }
+  main > div .price {
+    margin-bottom: 30px;
+  }
+  main > div button {
+    width: 236px;
+  }
+  .img--mobile {
+    display: none;
+  }
+  .img--desktop {
+    display: inherit;
+    border-radius: 10px 0 0 10px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
