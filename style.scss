@@ -1,0 +1,90 @@
+$primary--font-family: "Montserrat"; // sans-serif
+$secondary--font-family: "Fraunces"; // serif
+$cream--color: #F2EAE2;
+$aurometal--color: #6C7289;
+$white--color: #FFF;
+$deep--color: #3D8168;
+$deep-hover--color: #1A4032;
+body {
+  background-color: $cream--color;
+}
+main {
+  width: 343px;
+  margin: 28px auto;
+  display: flex;
+  flex-direction: column;
+  > div {
+    background-color: $white--color;
+    padding: 24px;
+    border-radius: 0 0 10px 10px;
+    .category {
+      margin-bottom: 12px;
+      font-family: $primary--font-family, sans-serif;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 5px;
+      color: $aurometal--color;
+    }
+    .title {
+      font-family: $secondary--font-family, serif;
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+    .description {
+      font-family: $primary--font-family, sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 23px;
+      color: $aurometal--color;
+      margin-bottom: 24px;
+    }
+    .price {
+      display: flex;
+      margin-bottom: 20px;
+      p {
+        font-family: $secondary--font-family, serif;
+        font-size: 32px;
+        font-weight: 700;
+        color: $deep--color;
+        margin-right: 19px;
+      }
+      span {
+        font-family: $primary--font-family, sans-serif;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 23px;
+        text-decoration: line-through;
+        color: $aurometal--color;
+      }
+    }
+    button {
+      width: 295px;
+      height: 48px;
+      border: none;
+      border-radius: 8px;
+      background-color: $deep--color;
+      color: $white--color;
+      font-family: $primary--font-family, sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .icon {
+        margin-right: 11.61px;
+      }
+      &:hover {
+        cursor: pointer;
+        background-color: $deep-hover--color;
+      }
+    }
+  }
+}
+.img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  &--desktop {
+    display: none;
+  }
+}
